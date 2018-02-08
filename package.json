@@ -1,0 +1,21 @@
+{
+  "name": "particle-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/live-server"
+  },
+  "author": "Bolivar Torres",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "async": "^2.6.0",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "live-server": "^1.2.0",
+    "lodash": "^4.17.5",
+    "pixi.js": "^4.7.0"
+  },
+  "devDependencies": {}
+}

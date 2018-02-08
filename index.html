@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Particle System</title>
+    </head>
+    <body ng-app="app" ng-controller="simulations">
+            <leaves-tumbling play='play' ng-show="simulation === 'leaves'"></leaves-tumbling></leaves-tumbling>
+            <snow-blowing-and-falling play='play' ng-show="simulation === 'snow'"></snow-blowing-and-falling>
+            <a href="#" class="play-button-float" ng-click="pauseSimulation()">
+                <i class="fa fa-pause icon-float" ng-show="play === true"></i>
+                <i class="fa fa-play icon-float" ng-show="play === false"></i>
+            </a>
+            <a href="#" class="toggle-button-float" ng-click="toggleSimulation()">
+                <i class="fa fa-leaf icon-float" ng-show="simulation === 'snow'"></i>
+                <i class="fa fa-snowflake-o icon-float" ng-show="simulation === 'leaves'"></i>
+            </a>
+    </body>
+    <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="./node_modules/pixi.js/dist/pixi.min.js"></script>
+    <script type="text/javascript" src="./node_modules/async/dist/async.min.js"></script>
+    <script type="text/javascript" src="./node_modules/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <!-- Utils -->
+    <script type="text/javascript" src="./utils/motionEffects.js"></script>
+
+    <!-- Directives -->
+    <script type="text/javascript" src="./directives/leavesTumbling.js"></script>
+    <script type="text/javascript" src="./directives/snowBlowingAndFalling.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="./controllers/simulations.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    
+</html>
